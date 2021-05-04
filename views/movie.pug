@@ -1,0 +1,92 @@
+doctype html
+html
+    head
+        title= title
+        style
+            include style.css
+        script
+            include script.js
+    body(class= "main")
+        h1= name
+        a(href='/main')
+            img(src= img)
+        p= description
+        hr
+        p= "Trivia"
+        form(action= id, method='POST' autocomplete='off')
+            br
+            p
+            label() QUESTION 1
+            p= question1
+            input(type='radio' name="question1" id="question1True" required value="1")
+            label(for="question1True") True
+            input(type='radio' name="question1" id="question1False" required value="0")
+            label(for="question1False") False
+            p
+            label() QUESTION 2 
+            p= question2
+            input(type='radio' name="question2" id="question2True" required value="1")
+            label(for="question2True") True
+            input(type='radio' name="question2" id="question2False" required value="0")
+            label(for="question2False") False
+            p
+            label() QUESTION 3
+            p= question3
+            input(type='radio' name="question3" id="question3True" required value="1")
+            label(for="question3True") True
+            input(type='radio' name="question3" id="question3False" required value="0")
+            label(for="question3False") False
+            p
+            label() QUESTION 4
+            p= question4
+            input(type='radio' name="question4" id="question4True" required value="1")
+            label(for="question4True") True
+            input(type='radio' name="question4" id="question4False" required value="0")
+            label(for="question4False") False
+            p
+            label() QUESTION 5
+            p= question5
+            input(type='radio' name="question5" id="question5True" required value="1")
+            label(for="question5True") True
+            input(type='radio' name="question5" id="question5False" required value="0")
+            label(for="question5False") False
+            p
+            label() QUESTION 6
+            p= question6
+            input(type='radio' name="question6" id="question6True" required value="1")
+            label(for="question6True") True
+            input(type='radio' name="question6" id="question6False" required value="0")
+            label(for="question6False") False
+            p
+            label() QUESTION 7
+            p= question7
+            input(type='radio' name="question7" id="question7True" required value="1")
+            label(for="question7True") True
+            input(type='radio' name="question7" id="question7False" required value="0")
+            label(for="question7False") False
+            p
+            label() QUESTION 8
+            p= question8
+            input(type='radio' name="question8" id="question8True" required value="1")
+            label(for="question8True") True
+            input(type='radio' name="question8" id="question8False" required value="0")
+            label(for="question8False") False
+            p
+            label() QUESTION 9
+            p= question9
+            input(type='radio' name="question9" id="question9True" required value="1")
+            label(for="question9True") True
+            input(type='radio' name="question9" id="question9False" required value="0")
+            label(for="question9False") False
+            p
+            label() QUESTION 10 
+            p= question10
+            input(type='radio' name="question10" id="question10True" required value="1")
+            label(for="question10True") True
+            input(type='radio' name="question10" id="question10False" required value="0")
+            label(for="question10False") False
+            p
+            input(name="username" onfocus="if (this.value=='Enter Username') this.value = ''" type="text" required value="Enter Username")
+            input(type='submit' value='Calculate Score')
+            p
+            a(href='#top') Back to top

@@ -1,0 +1,26 @@
+doctype html
+html
+    head
+        title= title
+        style
+            include style.css
+    body(class= "main")
+        a(href='/main')
+            img(src= img)
+        h2= name
+        p= description
+        hr
+        p= "You scored " + score + "/10"
+        br
+        p= "The following questions were answered incorrectly (according to imdb.com):"
+        ul
+            each n in answeredWrong
+                li=n
+        p
+        hr
+        p= "Username: " + agent.username
+        p= "Rank: " + agent.rank
+        p
+        form(action='rank', method='GET')
+            input(type='submit' value='Check Leaderboard')
+        a(href='main') Back to main
