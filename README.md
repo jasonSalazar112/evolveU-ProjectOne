@@ -1,6 +1,6 @@
 Name: Jason Salazar
 
-Project: Choose Your Own Adventure: 007 Movie Trivia
+Project: Choose Your Own Adventure - 007 Movie Trivia
 
 Description:
 This is my first coding project for evolveU.  The theme is "Choose Your Own Adventure".
